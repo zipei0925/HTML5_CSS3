@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .nav li 的权重是11，使用的是类选择器，不是继承关系*/
+        .nav li {
+            color: red;
+        }
+        /* .pink 的权重是10 */
+        /* .nav .pink 的权重是20 */
+        .nav .pink {
+            color: pink;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li class="pink">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</body>
+</html>

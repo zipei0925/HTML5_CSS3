@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 仅能够继承与文字相关的属性 */
+        div {
+            /* font: 50px/24px "Microsoft YaHei"; */
+            font: 50px/1.5 "Microsoft YaHei";
+            color: pink;
+            text-align: center;
+        }
+        p {
+            /* 行高1.5指的是当前文字像素大小的1.5倍 */
+            font-size: 24px;
+        }  
+        /* 当前行高 = 1.5 * 12 */
+        a {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>继承div标签的属性</p>
+        <a href="#">继承div标签的属性2</a>
+        <ul>
+            <li>我的行高是1.5*文字像素大小 </li>
+        </ul>
+    </div>
+</body>
+</html>

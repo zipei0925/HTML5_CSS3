@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素显示模式转换</title>
+    <style>
+        /* 行内元素转块元素 重点*/
+        a {
+            display: block;
+            width: 130px;
+            height: 50px;
+            background: skyblue;
+        }
+        /* 块元素装行内元素 */
+        div {
+            background: #965555;
+            display: inline;
+        }
+        /* 行内元素转换为行内块元素 重点*/
+        span {
+            display: inline-block;
+            width: 100px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">手机电脑</a>
+    <a href="#">耳机音箱</a>
+    <div>京东618</div>
+    <div>京东618</div>
+    <span>行内元素转换为行内块元素</span>
+    <span>行内元素转换为行内块元素</span>
+</body>
+</html>
