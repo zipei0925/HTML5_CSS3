@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* 给父级元素添加overflow:hidden清除浮动 */
+        .clearfix:after{
+            counter: 0;
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .clearfix {  /* IE6,7专用 */
+            *zoom: 1;
+        }
+        .box {
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .damao {
+            float: left;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+        .ermao {
+            float: left;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+        .sanmao {
+            float: left; 
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            
+        }
+        .box2 {
+            height: 200px;
+            background-color: purple ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box clearfix">
+        <div class="damao"></div>
+        <div class="ermao"></div>
+        <div class="sanmao"></div>
+    </div>  
+    <div class="box2"></div>
+</body>
+</html>

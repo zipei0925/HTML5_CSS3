@@ -1,0 +1,38 @@
+<!DOCTPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=di, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 1200px;
+            height: 460px;
+            background-color: blue;
+            margin: 0 auto;
+        }
+        .left {
+            /* 设置浮动和box1浮起来,不保留原来的位置 被box2占有 */
+           float: left;
+            width: 230px;
+            height: 460px;
+            background-color: pink;
+        }
+        .right{
+            /* 设置浮动和box1浮起来,不保留原来的位置 被box2占有 */
+           float: right;
+            width: 970px;
+            height: 460px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="left">左侧盒子</div>
+        <div class="right">右侧盒子</div>
+
+    </div>
+
+</body>
+</html>
