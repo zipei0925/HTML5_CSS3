@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 浮动不会压住下方标准流的文字或者图片 */
+            /* float: left; */
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            /* 绝对定位和固定定位会压住下方标准流的文字 */
+            position: absolute;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p>大鹏一日通风起,扶摇直上九万里</p>
+</body>
+</html>
